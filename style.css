@@ -1,259 +1,197 @@
-<html>
-<head>
-<title>style.css</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<style type="text/css">
-.s0 { color: #bcbec4;}
-.s1 { color: #bcbec4;}
-.s2 { color: #d5b778;}
-.s3 { color: #bcbec4;}
-.s4 { color: #bababa;}
-.s5 { color: #56a8f5;}
-.s6 { color: #6aab73;}
-.s7 { color: #2aacb8;}
-.s8 { color: #7a7e85;}
-</style>
-</head>
-<body bgcolor="#1e1f22">
-<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
-<tr><td><center>
-<font face="Arial, Helvetica" color="#000000">
-style.css</font>
-</center></td></tr></table>
-<pre>
-<span class="s1">:</span><span class="s2">root </span><span class="s3">{</span>
-    <span class="s4">--primary-color</span><span class="s1">: </span><span class="s5">#6f4e37</span><span class="s3">;</span>
-    <span class="s4">--secondary-color</span><span class="s1">: </span><span class="s5">#d2b48c</span><span class="s3">;</span>
-    <span class="s4">--accent-color</span><span class="s1">: </span><span class="s5">#a0522d</span><span class="s3">;</span>
-    <span class="s4">--background-color</span><span class="s1">: </span><span class="s5">#f5f5dc</span><span class="s3">;</span>
-    <span class="s4">--font-base</span><span class="s1">: </span><span class="s6">'Arial'</span><span class="s3">, </span><span class="s6">sans-serif</span><span class="s3">;</span>
-    <span class="s4">--spacing-unit</span><span class="s1">: </span><span class="s7">8</span><span class="s6">px</span><span class="s3">;</span>
-<span class="s3">}</span>
-
-
-<span class="s2">* </span><span class="s3">{</span>
-    <span class="s4">margin</span><span class="s1">: </span><span class="s7">0</span><span class="s3">;</span>
-    <span class="s4">padding</span><span class="s1">: </span><span class="s7">0</span><span class="s3">;</span>
-    <span class="s4">box-sizing</span><span class="s1">: </span><span class="s6">border-box</span><span class="s3">;</span>
-<span class="s3">}</span>
-
-<span class="s2">body </span><span class="s3">{</span>
-    <span class="s4">font-family</span><span class="s1">: </span><span class="s2">var</span><span class="s3">(</span><span class="s2">--font-base</span><span class="s3">);</span>
-    <span class="s4">line-height</span><span class="s1">: </span><span class="s7">1.6</span><span class="s3">;</span>
-    <span class="s4">background-color</span><span class="s1">: </span><span class="s2">var</span><span class="s3">(</span><span class="s2">--background-color</span><span class="s3">);</span>
-    <span class="s4">color</span><span class="s1">: </span><span class="s5">#333</span><span class="s3">;</span>
-    <span class="s4">padding</span><span class="s1">: </span><span class="s2">calc</span><span class="s3">(</span><span class="s2">var</span><span class="s3">(</span><span class="s2">--spacing-unit</span><span class="s3">) * </span><span class="s7">2</span><span class="s3">);</span>
-<span class="s3">}</span>
-
-
-<span class="s2">header </span><span class="s3">{</span>
-    <span class="s4">background</span><span class="s1">: </span><span class="s2">var</span><span class="s3">(</span><span class="s2">--primary-color</span><span class="s3">);</span>
-    <span class="s4">color</span><span class="s1">: </span><span class="s6">white</span><span class="s3">;</span>
-    <span class="s4">display</span><span class="s1">: </span><span class="s6">flex</span><span class="s3">;</span>
-    <span class="s4">justify-content</span><span class="s1">: </span><span class="s6">space-between</span><span class="s3">;</span>
-    <span class="s4">align-items</span><span class="s1">: </span><span class="s6">center</span><span class="s3">;</span>
-    <span class="s4">padding</span><span class="s1">: </span><span class="s2">calc</span><span class="s3">(</span><span class="s2">var</span><span class="s3">(</span><span class="s2">--spacing-unit</span><span class="s3">) * </span><span class="s7">2</span><span class="s3">);</span>
-<span class="s3">}</span>
-
-<span class="s2">header </span><span class="s3">.</span><span class="s2">logo a </span><span class="s3">{</span>
-    <span class="s4">color</span><span class="s1">: </span><span class="s6">white</span><span class="s3">;</span>
-    <span class="s4">text-decoration</span><span class="s1">: </span><span class="s6">none</span><span class="s3">;</span>
-    <span class="s4">font-size</span><span class="s1">: </span><span class="s7">1.5</span><span class="s6">rem</span><span class="s3">;</span>
-    <span class="s4">font-weight</span><span class="s1">: </span><span class="s6">bold</span><span class="s3">;</span>
-<span class="s3">}</span>
-
-<span class="s2">nav ul </span><span class="s3">{</span>
-    <span class="s4">list-style</span><span class="s1">: </span><span class="s6">none</span><span class="s3">;</span>
-    <span class="s4">display</span><span class="s1">: </span><span class="s6">flex</span><span class="s3">;</span>
-    <span class="s4">gap</span><span class="s1">: </span><span class="s2">calc</span><span class="s3">(</span><span class="s2">var</span><span class="s3">(</span><span class="s2">--spacing-unit</span><span class="s3">) * </span><span class="s7">2</span><span class="s3">);</span>
-<span class="s3">}</span>
-
-<span class="s2">nav ul li a </span><span class="s3">{</span>
-    <span class="s4">color</span><span class="s1">: </span><span class="s6">white</span><span class="s3">;</span>
-    <span class="s4">text-decoration</span><span class="s1">: </span><span class="s6">none</span><span class="s3">;</span>
-    <span class="s4">font-size</span><span class="s1">: </span><span class="s7">1</span><span class="s6">rem</span><span class="s3">;</span>
-<span class="s3">}</span>
-
-<span class="s3">.</span><span class="s2">utility-links a </span><span class="s3">{</span>
-    <span class="s4">color</span><span class="s1">: </span><span class="s6">white</span><span class="s3">;</span>
-    <span class="s4">margin-left</span><span class="s1">: </span><span class="s2">calc</span><span class="s3">(</span><span class="s2">var</span><span class="s3">(</span><span class="s2">--spacing-unit</span><span class="s3">) * </span><span class="s7">2</span><span class="s3">);</span>
-    <span class="s4">text-decoration</span><span class="s1">: </span><span class="s6">none</span><span class="s3">;</span>
-    <span class="s4">font-size</span><span class="s1">: </span><span class="s7">1.2</span><span class="s6">rem</span><span class="s3">;</span>
-<span class="s3">}</span>
-
-
-<span class="s2">#hero </span><span class="s3">{</span>
-    <span class="s4">text-align</span><span class="s1">: </span><span class="s6">center</span><span class="s3">;</span>
-    <span class="s4">margin-top</span><span class="s1">: </span><span class="s2">calc</span><span class="s3">(</span><span class="s2">var</span><span class="s3">(</span><span class="s2">--spacing-unit</span><span class="s3">) * </span><span class="s7">4</span><span class="s3">);</span>
-    <span class="s4">background</span><span class="s1">: </span><span class="s2">var</span><span class="s3">(</span><span class="s2">--secondary-color</span><span class="s3">);</span>
-    <span class="s4">padding</span><span class="s1">: </span><span class="s2">calc</span><span class="s3">(</span><span class="s2">var</span><span class="s3">(</span><span class="s2">--spacing-unit</span><span class="s3">) * </span><span class="s7">4</span><span class="s3">);</span>
-    <span class="s4">border-radius</span><span class="s1">: </span><span class="s7">20</span><span class="s6">px</span><span class="s3">;</span>
-    <span class="s4">box-shadow</span><span class="s1">: </span><span class="s7">0 4</span><span class="s6">px </span><span class="s7">6</span><span class="s6">px </span><span class="s2">rgba</span><span class="s3">(</span><span class="s7">0</span><span class="s3">, </span><span class="s7">0</span><span class="s3">, </span><span class="s7">0</span><span class="s3">, </span><span class="s7">0.1</span><span class="s3">);</span>
-<span class="s3">}</span>
-
-<span class="s2">#hero h1 </span><span class="s3">{</span>
-    <span class="s4">font-size</span><span class="s1">: </span><span class="s7">2.5</span><span class="s6">rem</span><span class="s3">;</span>
-    <span class="s4">margin-bottom</span><span class="s1">: </span><span class="s2">calc</span><span class="s3">(</span><span class="s2">var</span><span class="s3">(</span><span class="s2">--spacing-unit</span><span class="s3">) * </span><span class="s7">2</span><span class="s3">);</span>
-<span class="s3">}</span>
-
-<span class="s2">#hero p </span><span class="s3">{</span>
-    <span class="s4">font-size</span><span class="s1">: </span><span class="s7">1.2</span><span class="s6">rem</span><span class="s3">;</span>
-    <span class="s4">margin-bottom</span><span class="s1">: </span><span class="s2">calc</span><span class="s3">(</span><span class="s2">var</span><span class="s3">(</span><span class="s2">--spacing-unit</span><span class="s3">) * </span><span class="s7">4</span><span class="s3">);</span>
-<span class="s3">}</span>
-
-<span class="s2">#hero form </span><span class="s3">{</span>
-    <span class="s4">display</span><span class="s1">: </span><span class="s6">flex</span><span class="s3">;</span>
-    <span class="s4">justify-content</span><span class="s1">: </span><span class="s6">center</span><span class="s3">;</span>
-    <span class="s4">gap</span><span class="s1">: </span><span class="s2">calc</span><span class="s3">(</span><span class="s2">var</span><span class="s3">(</span><span class="s2">--spacing-unit</span><span class="s3">) * </span><span class="s7">2</span><span class="s3">);</span>
-<span class="s3">}</span>
-
-<span class="s2">#hero input </span><span class="s3">{</span>
-    <span class="s4">padding</span><span class="s1">: </span><span class="s2">calc</span><span class="s3">(</span><span class="s2">var</span><span class="s3">(</span><span class="s2">--spacing-unit</span><span class="s3">) * </span><span class="s7">1.5</span><span class="s3">);</span>
-    <span class="s4">border</span><span class="s1">: </span><span class="s6">none</span><span class="s3">;</span>
-    <span class="s4">border-radius</span><span class="s1">: </span><span class="s7">20</span><span class="s6">px</span><span class="s3">;</span>
-    <span class="s4">width</span><span class="s1">: </span><span class="s7">300</span><span class="s6">px</span><span class="s3">;</span>
-    <span class="s4">background</span><span class="s1">: </span><span class="s6">white</span><span class="s3">;</span>
-    <span class="s4">color</span><span class="s1">: </span><span class="s5">#333</span><span class="s3">;</span>
-    <span class="s4">font-size</span><span class="s1">: </span><span class="s7">1</span><span class="s6">rem</span><span class="s3">;</span>
-<span class="s3">}</span>
-
-<span class="s2">#hero button </span><span class="s3">{</span>
-    <span class="s4">background</span><span class="s1">: </span><span class="s2">var</span><span class="s3">(</span><span class="s2">--accent-color</span><span class="s3">);</span>
-    <span class="s4">color</span><span class="s1">: </span><span class="s6">white</span><span class="s3">;</span>
-    <span class="s4">border</span><span class="s1">: </span><span class="s6">none</span><span class="s3">;</span>
-    <span class="s4">padding</span><span class="s1">: </span><span class="s2">calc</span><span class="s3">(</span><span class="s2">var</span><span class="s3">(</span><span class="s2">--spacing-unit</span><span class="s3">) * </span><span class="s7">1.5</span><span class="s3">) </span><span class="s2">calc</span><span class="s3">(</span><span class="s2">var</span><span class="s3">(</span><span class="s2">--spacing-unit</span><span class="s3">) * </span><span class="s7">3</span><span class="s3">);</span>
-    <span class="s4">cursor</span><span class="s1">: </span><span class="s6">pointer</span><span class="s3">;</span>
-    <span class="s4">border-radius</span><span class="s1">: </span><span class="s7">20</span><span class="s6">px</span><span class="s3">;</span>
-    <span class="s4">font-size</span><span class="s1">: </span><span class="s7">1</span><span class="s6">rem</span><span class="s3">;</span>
-<span class="s3">}</span>
-
-<span class="s8">/* Event Grid */</span>
-<span class="s3">.</span><span class="s2">event-grid </span><span class="s3">{</span>
-    <span class="s4">display</span><span class="s1">: </span><span class="s6">grid</span><span class="s3">;</span>
-    <span class="s4">grid-template-columns</span><span class="s1">: </span><span class="s2">repeat</span><span class="s3">(</span><span class="s6">auto-fit</span><span class="s3">, </span><span class="s2">minmax</span><span class="s3">(</span><span class="s7">300</span><span class="s6">px</span><span class="s3">, </span><span class="s7">1</span><span class="s6">fr</span><span class="s3">));</span>
-    <span class="s4">gap</span><span class="s1">: </span><span class="s2">calc</span><span class="s3">(</span><span class="s2">var</span><span class="s3">(</span><span class="s2">--spacing-unit</span><span class="s3">) * </span><span class="s7">4</span><span class="s3">);</span>
-    <span class="s4">margin-top</span><span class="s1">: </span><span class="s2">calc</span><span class="s3">(</span><span class="s2">var</span><span class="s3">(</span><span class="s2">--spacing-unit</span><span class="s3">) * </span><span class="s7">4</span><span class="s3">);</span>
-<span class="s3">}</span>
-
-<span class="s3">.</span><span class="s2">card </span><span class="s3">{</span>
-    <span class="s4">background</span><span class="s1">: </span><span class="s6">white</span><span class="s3">;</span>
-    <span class="s4">border</span><span class="s1">: </span><span class="s7">1</span><span class="s6">px solid </span><span class="s5">#ddd</span><span class="s3">;</span>
-    <span class="s4">border-radius</span><span class="s1">: </span><span class="s7">20</span><span class="s6">px</span><span class="s3">;</span>
-    <span class="s4">padding</span><span class="s1">: </span><span class="s2">calc</span><span class="s3">(</span><span class="s2">var</span><span class="s3">(</span><span class="s2">--spacing-unit</span><span class="s3">) * </span><span class="s7">3</span><span class="s3">);</span>
-    <span class="s4">text-align</span><span class="s1">: </span><span class="s6">center</span><span class="s3">;</span>
-    <span class="s4">box-shadow</span><span class="s1">: </span><span class="s7">0 6</span><span class="s6">px </span><span class="s7">12</span><span class="s6">px </span><span class="s2">rgba</span><span class="s3">(</span><span class="s7">0</span><span class="s3">, </span><span class="s7">0</span><span class="s3">, </span><span class="s7">0</span><span class="s3">, </span><span class="s7">0.1</span><span class="s3">);</span>
-    <span class="s4">transition</span><span class="s1">: </span><span class="s2">transform </span><span class="s7">0.3</span><span class="s6">s ease</span><span class="s3">, </span><span class="s2">box-shadow </span><span class="s7">0.3</span><span class="s6">s ease</span><span class="s3">;</span>
-<span class="s3">}</span>
-
-<span class="s3">.</span><span class="s2">card</span><span class="s1">:</span><span class="s2">hover </span><span class="s3">{</span>
-    <span class="s4">transform</span><span class="s1">: </span><span class="s2">translateY</span><span class="s3">(-</span><span class="s7">10</span><span class="s6">px</span><span class="s3">);</span>
-    <span class="s4">box-shadow</span><span class="s1">: </span><span class="s7">0 8</span><span class="s6">px </span><span class="s7">16</span><span class="s6">px </span><span class="s2">rgba</span><span class="s3">(</span><span class="s7">0</span><span class="s3">, </span><span class="s7">0</span><span class="s3">, </span><span class="s7">0</span><span class="s3">, </span><span class="s7">0.15</span><span class="s3">);</span>
-<span class="s3">}</span>
-
-<span class="s3">.</span><span class="s2">card h3 </span><span class="s3">{</span>
-    <span class="s4">margin-bottom</span><span class="s1">: </span><span class="s2">calc</span><span class="s3">(</span><span class="s2">var</span><span class="s3">(</span><span class="s2">--spacing-unit</span><span class="s3">) * </span><span class="s7">1</span><span class="s3">);</span>
-    <span class="s4">color</span><span class="s1">: </span><span class="s2">var</span><span class="s3">(</span><span class="s2">--primary-color</span><span class="s3">);</span>
-    <span class="s4">font-size</span><span class="s1">: </span><span class="s7">1.5</span><span class="s6">rem</span><span class="s3">;</span>
-<span class="s3">}</span>
-
-<span class="s3">.</span><span class="s2">card p </span><span class="s3">{</span>
-    <span class="s4">margin-bottom</span><span class="s1">: </span><span class="s2">calc</span><span class="s3">(</span><span class="s2">var</span><span class="s3">(</span><span class="s2">--spacing-unit</span><span class="s3">) * </span><span class="s7">2</span><span class="s3">);</span>
-    <span class="s4">color</span><span class="s1">: </span><span class="s5">#555</span><span class="s3">;</span>
-    <span class="s4">font-size</span><span class="s1">: </span><span class="s7">1</span><span class="s6">rem</span><span class="s3">;</span>
-<span class="s3">}</span>
-
-<span class="s3">.</span><span class="s2">card </span><span class="s3">.</span><span class="s2">btn </span><span class="s3">{</span>
-    <span class="s4">background</span><span class="s1">: </span><span class="s2">var</span><span class="s3">(</span><span class="s2">--accent-color</span><span class="s3">);</span>
-    <span class="s4">color</span><span class="s1">: </span><span class="s6">white</span><span class="s3">;</span>
-    <span class="s4">border</span><span class="s1">: </span><span class="s6">none</span><span class="s3">;</span>
-    <span class="s4">padding</span><span class="s1">: </span><span class="s2">calc</span><span class="s3">(</span><span class="s2">var</span><span class="s3">(</span><span class="s2">--spacing-unit</span><span class="s3">) * </span><span class="s7">1.5</span><span class="s3">) </span><span class="s2">calc</span><span class="s3">(</span><span class="s2">var</span><span class="s3">(</span><span class="s2">--spacing-unit</span><span class="s3">) * </span><span class="s7">3</span><span class="s3">);</span>
-    <span class="s4">cursor</span><span class="s1">: </span><span class="s6">pointer</span><span class="s3">;</span>
-    <span class="s4">border-radius</span><span class="s1">: </span><span class="s7">20</span><span class="s6">px</span><span class="s3">;</span>
-    <span class="s4">font-size</span><span class="s1">: </span><span class="s7">1</span><span class="s6">rem</span><span class="s3">;</span>
-<span class="s3">}</span>
-
-
-<span class="s3">.</span><span class="s2">filters </span><span class="s3">{</span>
-    <span class="s4">margin-bottom</span><span class="s1">: </span><span class="s2">calc</span><span class="s3">(</span><span class="s2">var</span><span class="s3">(</span><span class="s2">--spacing-unit</span><span class="s3">) * </span><span class="s7">4</span><span class="s3">);</span>
-    <span class="s4">text-align</span><span class="s1">: </span><span class="s6">center</span><span class="s3">;</span>
-<span class="s3">}</span>
-
-<span class="s3">.</span><span class="s2">filters label </span><span class="s3">{</span>
-    <span class="s4">margin-right</span><span class="s1">: </span><span class="s2">calc</span><span class="s3">(</span><span class="s2">var</span><span class="s3">(</span><span class="s2">--spacing-unit</span><span class="s3">) * </span><span class="s7">1</span><span class="s3">);</span>
-    <span class="s4">font-size</span><span class="s1">: </span><span class="s7">1</span><span class="s6">rem</span><span class="s3">;</span>
-    <span class="s4">color</span><span class="s1">: </span><span class="s5">#333</span><span class="s3">;</span>
-<span class="s3">}</span>
-
-<span class="s3">.</span><span class="s2">filters select </span><span class="s3">{</span>
-    <span class="s4">background</span><span class="s1">: </span><span class="s6">white</span><span class="s3">;</span>
-    <span class="s4">border</span><span class="s1">: </span><span class="s7">1</span><span class="s6">px solid </span><span class="s5">#ddd</span><span class="s3">;</span>
-    <span class="s4">border-radius</span><span class="s1">: </span><span class="s7">20</span><span class="s6">px</span><span class="s3">;</span>
-    <span class="s4">padding</span><span class="s1">: </span><span class="s2">calc</span><span class="s3">(</span><span class="s2">var</span><span class="s3">(</span><span class="s2">--spacing-unit</span><span class="s3">) * </span><span class="s7">1</span><span class="s3">);</span>
-    <span class="s4">font-size</span><span class="s1">: </span><span class="s7">1</span><span class="s6">rem</span><span class="s3">;</span>
-<span class="s3">}</span>
-
-
-<span class="s2">footer </span><span class="s3">{</span>
-    <span class="s4">background</span><span class="s1">: </span><span class="s2">var</span><span class="s3">(</span><span class="s2">--primary-color</span><span class="s3">);</span>
-    <span class="s4">color</span><span class="s1">: </span><span class="s6">white</span><span class="s3">;</span>
-    <span class="s4">text-align</span><span class="s1">: </span><span class="s6">center</span><span class="s3">;</span>
-    <span class="s4">padding</span><span class="s1">: </span><span class="s2">calc</span><span class="s3">(</span><span class="s2">var</span><span class="s3">(</span><span class="s2">--spacing-unit</span><span class="s3">) * </span><span class="s7">2</span><span class="s3">);</span>
-    <span class="s4">margin-top</span><span class="s1">: </span><span class="s2">calc</span><span class="s3">(</span><span class="s2">var</span><span class="s3">(</span><span class="s2">--spacing-unit</span><span class="s3">) * </span><span class="s7">4</span><span class="s3">);</span>
-    <span class="s4">border-radius</span><span class="s1">: </span><span class="s7">20</span><span class="s6">px</span><span class="s3">;</span>
-    <span class="s4">box-shadow</span><span class="s1">: </span><span class="s7">0 4</span><span class="s6">px </span><span class="s7">6</span><span class="s6">px </span><span class="s2">rgba</span><span class="s3">(</span><span class="s7">0</span><span class="s3">, </span><span class="s7">0</span><span class="s3">, </span><span class="s7">0</span><span class="s3">, </span><span class="s7">0.1</span><span class="s3">);</span>
-<span class="s3">}</span>
-
-<span class="s2">footer form </span><span class="s3">{</span>
-    <span class="s4">display</span><span class="s1">: </span><span class="s6">flex</span><span class="s3">;</span>
-    <span class="s4">justify-content</span><span class="s1">: </span><span class="s6">center</span><span class="s3">;</span>
-    <span class="s4">gap</span><span class="s1">: </span><span class="s2">calc</span><span class="s3">(</span><span class="s2">var</span><span class="s3">(</span><span class="s2">--spacing-unit</span><span class="s3">) * </span><span class="s7">2</span><span class="s3">);</span>
-    <span class="s4">margin-bottom</span><span class="s1">: </span><span class="s2">calc</span><span class="s3">(</span><span class="s2">var</span><span class="s3">(</span><span class="s2">--spacing-unit</span><span class="s3">) * </span><span class="s7">2</span><span class="s3">);</span>
-<span class="s3">}</span>
-
-<span class="s2">footer input</span><span class="s3">[</span><span class="s2">type</span><span class="s3">=</span><span class="s6">&quot;email&quot;</span><span class="s3">] {</span>
-    <span class="s4">padding</span><span class="s1">: </span><span class="s2">calc</span><span class="s3">(</span><span class="s2">var</span><span class="s3">(</span><span class="s2">--spacing-unit</span><span class="s3">) * </span><span class="s7">1.5</span><span class="s3">);</span>
-    <span class="s4">border</span><span class="s1">: </span><span class="s6">none</span><span class="s3">;</span>
-    <span class="s4">border-radius</span><span class="s1">: </span><span class="s7">20</span><span class="s6">px</span><span class="s3">;</span>
-    <span class="s4">width</span><span class="s1">: </span><span class="s7">300</span><span class="s6">px</span><span class="s3">;</span>
-    <span class="s4">background</span><span class="s1">: </span><span class="s2">rgba</span><span class="s3">(</span><span class="s7">255</span><span class="s3">, </span><span class="s7">255</span><span class="s3">, </span><span class="s7">255</span><span class="s3">, </span><span class="s7">0.8</span><span class="s3">);</span>
-    <span class="s4">color</span><span class="s1">: </span><span class="s5">#333</span><span class="s3">;</span>
-<span class="s3">}</span>
-
-<span class="s3">.</span><span class="s2">social-links</span><span class="s3">, .</span><span class="s2">legal-links </span><span class="s3">{</span>
-    <span class="s4">margin-top</span><span class="s1">: </span><span class="s2">calc</span><span class="s3">(</span><span class="s2">var</span><span class="s3">(</span><span class="s2">--spacing-unit</span><span class="s3">) * </span><span class="s7">2</span><span class="s3">);</span>
-<span class="s3">}</span>
-
-<span class="s3">.</span><span class="s2">social-links a</span><span class="s3">, .</span><span class="s2">legal-links a </span><span class="s3">{</span>
-    <span class="s4">color</span><span class="s1">: </span><span class="s6">white</span><span class="s3">;</span>
-    <span class="s4">text-decoration</span><span class="s1">: </span><span class="s6">none</span><span class="s3">;</span>
-    <span class="s4">margin</span><span class="s1">: </span><span class="s7">0 </span><span class="s2">calc</span><span class="s3">(</span><span class="s2">var</span><span class="s3">(</span><span class="s2">--spacing-unit</span><span class="s3">) * </span><span class="s7">1</span><span class="s3">);</span>
-    <span class="s4">font-size</span><span class="s1">: </span><span class="s7">1</span><span class="s6">rem</span><span class="s3">;</span>
-<span class="s3">}</span>
-
-<span class="s2">#faq </span><span class="s3">{</span>
-    <span class="s4">margin-top</span><span class="s1">: </span><span class="s2">calc</span><span class="s3">(</span><span class="s2">var</span><span class="s3">(</span><span class="s2">--spacing-unit</span><span class="s3">) * </span><span class="s7">4</span><span class="s3">);</span>
-    <span class="s4">padding</span><span class="s1">: </span><span class="s2">calc</span><span class="s3">(</span><span class="s2">var</span><span class="s3">(</span><span class="s2">--spacing-unit</span><span class="s3">) * </span><span class="s7">2</span><span class="s3">);</span>
-<span class="s3">}</span>
-
-<span class="s3">.</span><span class="s2">faq-item </span><span class="s3">{</span>
-    <span class="s4">margin-bottom</span><span class="s1">: </span><span class="s2">calc</span><span class="s3">(</span><span class="s2">var</span><span class="s3">(</span><span class="s2">--spacing-unit</span><span class="s3">) * </span><span class="s7">4</span><span class="s3">);</span>
-    <span class="s4">padding</span><span class="s1">: </span><span class="s2">calc</span><span class="s3">(</span><span class="s2">var</span><span class="s3">(</span><span class="s2">--spacing-unit</span><span class="s3">) * </span><span class="s7">2</span><span class="s3">);</span>
-    <span class="s4">background</span><span class="s1">: </span><span class="s2">rgba</span><span class="s3">(</span><span class="s7">255</span><span class="s3">, </span><span class="s7">255</span><span class="s3">, </span><span class="s7">255</span><span class="s3">, </span><span class="s7">0.9</span><span class="s3">);</span>
-    <span class="s4">border-radius</span><span class="s1">: </span><span class="s7">10</span><span class="s6">px</span><span class="s3">;</span>
-    <span class="s4">box-shadow</span><span class="s1">: </span><span class="s7">0 4</span><span class="s6">px </span><span class="s7">6</span><span class="s6">px </span><span class="s2">rgba</span><span class="s3">(</span><span class="s7">0</span><span class="s3">, </span><span class="s7">0</span><span class="s3">, </span><span class="s7">0</span><span class="s3">, </span><span class="s7">0.1</span><span class="s3">);</span>
-<span class="s3">}</span>
-
-<span class="s3">.</span><span class="s2">faq-item h3 </span><span class="s3">{</span>
-    <span class="s4">color</span><span class="s1">: </span><span class="s2">var</span><span class="s3">(</span><span class="s2">--primary-color</span><span class="s3">);</span>
-    <span class="s4">font-size</span><span class="s1">: </span><span class="s7">1.5</span><span class="s6">rem</span><span class="s3">;</span>
-    <span class="s4">margin-bottom</span><span class="s1">: </span><span class="s2">calc</span><span class="s3">(</span><span class="s2">var</span><span class="s3">(</span><span class="s2">--spacing-unit</span><span class="s3">) * </span><span class="s7">1</span><span class="s3">);</span>
-<span class="s3">}</span>
-
-<span class="s3">.</span><span class="s2">faq-item p </span><span class="s3">{</span>
-    <span class="s4">color</span><span class="s1">: </span><span class="s5">#555</span><span class="s3">;</span>
-    <span class="s4">font-size</span><span class="s1">: </span><span class="s7">1</span><span class="s6">rem</span><span class="s3">;</span>
-    <span class="s4">line-height</span><span class="s1">: </span><span class="s7">1.6</span><span class="s3">;</span>
-<span class="s3">}</span>
-</pre>
-</body>
-</html>
+:root {
+    --primary-color: #6f4e37;
+    --secondary-color: #d2b48c;
+    --accent-color: #a0522d;
+    --background-color: #f5f5dc;
+    --font-base: 'Arial', sans-serif;
+    --spacing-unit: 8px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--font-base);
+    line-height: 1.6;
+    background-color: var(--background-color);
+    color: #333;
+    padding: calc(var(--spacing-unit) * 2);
+}
+header {
+    background: var(--primary-color);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: calc(var(--spacing-unit) * 2);
+}
+header .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: calc(var(--spacing-unit) * 2);
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.utility-links a {
+    color: white;
+    margin-left: calc(var(--spacing-unit) * 2);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+#hero {
+    text-align: center;
+    margin-top: calc(var(--spacing-unit) * 4);
+    background: var(--secondary-color);
+    padding: calc(var(--spacing-unit) * 4);
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+#hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: calc(var(--spacing-unit) * 2);
+}
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: calc(var(--spacing-unit) * 4);
+}
+#hero form {
+    display: flex;
+    justify-content: center;
+    gap: calc(var(--spacing-unit) * 2);
+}
+#hero input {
+    padding: calc(var(--spacing-unit) * 1.5);
+    border: none;
+    border-radius: 20px;
+    width: 300px;
+    background: white;
+    color: #333;
+    font-size: 1rem;
+}
+#hero button {
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    padding: calc(var(--spacing-unit) * 1.5) calc(var(--spacing-unit) * 3);
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+/* Event Grid */
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: calc(var(--spacing-unit) * 4);
+    margin-top: calc(var(--spacing-unit) * 4);
+}
+.card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: calc(var(--spacing-unit) * 3);
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+.card h3 {
+    margin-bottom: calc(var(--spacing-unit) * 1);
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+.card p {
+    margin-bottom: calc(var(--spacing-unit) * 2);
+    color: #555;
+    font-size: 1rem;
+}
+.card .btn {
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    padding: calc(var(--spacing-unit) * 1.5) calc(var(--spacing-unit) * 3);
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+.filters {
+    margin-bottom: calc(var(--spacing-unit) * 4);
+    text-align: center;
+}
+.filters label {
+    margin-right: calc(var(--spacing-unit) * 1);
+    font-size: 1rem;
+    color: #333;
+}
+.filters select {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: calc(var(--spacing-unit) * 1);
+    font-size: 1rem;
+}
+footer {
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: calc(var(--spacing-unit) * 2);
+    margin-top: calc(var(--spacing-unit) * 4);
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+footer form {
+    display: flex;
+    justify-content: center;
+    gap: calc(var(--spacing-unit) * 2);
+    margin-bottom: calc(var(--spacing-unit) * 2);
+}
+footer input[type="email"] {
+    padding: calc(var(--spacing-unit) * 1.5);
+    border: none;
+    border-radius: 20px;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+}
+.social-links, .legal-links {
+    margin-top: calc(var(--spacing-unit) * 2);
+}
+.social-links a, .legal-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 calc(var(--spacing-unit) * 1);
+    font-size: 1rem;
+}
+#faq {
+    margin-top: calc(var(--spacing-unit) * 4);
+    padding: calc(var(--spacing-unit) * 2);
+}
+.faq-item {
+    margin-bottom: calc(var(--spacing-unit) * 4);
+    padding: calc(var(--spacing-unit) * 2);
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.faq-item h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: calc(var(--spacing-unit) * 1);
+}
+.faq-item p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+}
